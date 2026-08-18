@@ -29,10 +29,10 @@ The backend and frontend remain independently runnable while sharing one reposit
 
 ### Framework
 
-- Spring Boot **4.1.0**
+- Spring Boot **4.0.7**
 - Spring Framework 7.x through Spring Boot dependency management
 
-Spring Boot 4.1.0 is the current stable Spring Boot release at the time this document is finalized. It requires Java 17+ and supports Java 21. citeturn0search0turn0search11
+Spring Boot 4.0.7 is the selected project version for compatibility and stability during the hackathon.
 
 ### Build tool
 
@@ -54,12 +54,10 @@ Use the Spring Boot parent/BOM for dependency version management. Do not manuall
 
 ### Security
 
-- Spring Security 7.x through Spring Boot 4.1 dependency management
+- Spring Security through the Spring Boot 4.0.7 dependency management
 - JWT-based stateless authentication
 - BCrypt password hashing
 - Nimbus JWT support through the Spring Security ecosystem rather than adding a second JWT stack unless implementation requirements prove otherwise
-
-Spring Security 7.x is the current stable generation, and Spring Boot provides the standard `spring-boot-starter-security` integration. citeturn1search3turn1search0
 
 ### Utilities
 
@@ -265,19 +263,13 @@ Return the error structure defined in `docs/api-contract.md`.
 
 - React **19.2**
 
-React 19.2 is the current documented latest major version. citeturn0search13
-
 ### Build tool
 
 - Vite **8.1**
 
-Vite 8.1 is the current stable release documented by the Vite project as of June 2026. citeturn1search6
-
 ### Styling
 
 - Tailwind CSS **4.3.x**
-
-Tailwind CSS 4.3 is the current documented release line as of May 2026. citeturn1search12
 
 ### Routing
 
@@ -519,12 +511,12 @@ The first implementation phase is complete when:
 | Area | Decision |
 |---|---|
 | Architecture | Modular monolith |
-| Backend | Spring Boot 4.1.0 |
+| Backend | Spring Boot 4.0.7 |
 | Java | 21 LTS |
 | Build | Maven |
 | Database | MySQL |
 | Persistence | Spring Data JPA / Hibernate |
-| Security | Spring Security 7.x + JWT + BCrypt |
+| Security | Spring Security + JWT + BCrypt |
 | JWT implementation | Spring Security/Nimbus |
 | Frontend | React 19.2 |
 | Bundler | Vite 8.1 |
