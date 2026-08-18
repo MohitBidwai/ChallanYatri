@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: challanyatri
+  # Phase 1 has no persistent domain model. Keep the health endpoint runnable
+  # without local database credentials; application-mysql.yml reenables these.
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+
+server:
+  port: ${SERVER_PORT:8080}
+
+app:
+  cors:
+    allowed-origin: ${APP_CORS_ALLOWED_ORIGIN:http://localhost:5173}
