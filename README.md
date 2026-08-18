@@ -17,7 +17,6 @@ This repository currently contains project initialization only: a Spring Boot ba
 
 Copy the appropriate example file before customizing local values. Do not commit `.env` files or real credentials.
 
-- Root environment reference: `.env.example`
 - Backend profile reference: `backend/.env.example`
 - Frontend environment reference: `frontend/.env.example`
 

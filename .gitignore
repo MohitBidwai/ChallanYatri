@@ -31,6 +31,5 @@ frontend/dist/
 .env
 backend/.env
 frontend/.env
-!/.env.example
 !backend/.env.example
 !frontend/.env.example
