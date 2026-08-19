@@ -1,13 +1,9 @@
-# Activate with SPRING_PROFILES_ACTIVE=mysql after setting DB_URL, DB_USERNAME, and DB_PASSWORD.
-# Phase 1 contains no entities or schema generation; this profile only supplies external MySQL connectivity.
 spring:
-  autoconfigure:
-    exclude: []
   datasource:
     url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: ${DDL_AUTO:update}
     open-in-view: false
